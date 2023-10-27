@@ -2,6 +2,7 @@ package histoire;
 import personnages.Humain;
 import personnages.Yakuza;
 import personnages.Commercant;
+import personnages.Ronin; 
 
 public class HistoireTP4 {
 
@@ -33,6 +34,12 @@ public class HistoireTP4 {
 		YakuLeNoir.parler(MarcoVictime.getNom() + ", si tu tiens a ta vie donne moi ta bourse! ");
 		YakuLeNoir.extorquer(MarcoVictime);
 		MarcoVictime.seFaireExtorquer(); 
+		
+		System.out.println("\n");
+		System.out.println("L'histoire du Ronin.\n");
+		
+		Ronin Roro = new Ronin("Roro", 60, "Shoshu"); 
+		Roro.donner(MarcoVictime);
 		
 	}
 	
