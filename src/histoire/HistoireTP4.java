@@ -41,6 +41,17 @@ public class HistoireTP4 {
 		Ronin Roro = new Ronin("Roro", 60, "Shoshu"); 
 		Roro.donner(MarcoVictime);
 		
+		System.out.println("\n");
+		System.out.println("L'histoire du Yakuza qui gagne contre le Ronin.\n");
+		
+		Roro.parler("Je t'ai retrouvé vermine, tu vas payer!");
+		Roro.provoquer(YakuLeNoir);
+		
+		System.out.println("\n");
+	
+		
+		
+				
 	}
 	
 
