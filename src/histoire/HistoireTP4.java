@@ -26,7 +26,7 @@ public class HistoireTP4 {
 		
 		System.out.println("\n");
 		System.out.println("L'histoire du yakuza.\n");
-		
+			
 		Yakuza YakuLeNoir = new Yakuza("Yaku le noir", 30, "whisky", "Warsong"); 
 		Commercant MarcoVictime = new Commercant("Marco la victime", 15); 
 		YakuLeNoir.direBonjour();
@@ -48,8 +48,8 @@ public class HistoireTP4 {
 		Roro.provoquer(YakuLeNoir);
 		
 		System.out.println("\n");
-	
 		
+	
 		
 				
 	}
