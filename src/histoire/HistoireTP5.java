@@ -33,5 +33,23 @@ public class HistoireTP5 {
 		roro.listerConnaissance();
 		yaku.listerConnaissance();
 		
+		System.out.println("\n");
+		
+		Samurai akimoto = new Samurai("Akimoto", 80, "saké", "Miyamoto"); 
+		akimoto.direBonjour();
+		marco.direBonjour();
+		akimoto.faireConnaissanceAvec(marco);
+		marco.faireConnaissanceAvec(akimoto);
+		akimoto.listerConnaissance();
+		akimoto.boire("the");
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 }
