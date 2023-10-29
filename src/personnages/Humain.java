@@ -5,8 +5,8 @@ public class Humain {
 	private String nom; 
 	protected int argent; 
 	private String boissonFavorite; 
-	private int nombreConnaissanceMax = 30;
-	private Humain [] connaissance = new Humain[nombreConnaissanceMax]; 
+	protected int nombreConnaissanceMax = 30;
+	protected Humain [] connaissance = new Humain[nombreConnaissanceMax]; 
 	public int nombreConnaissance = 0; 
 	
 	public Humain(String nom, int argent, String boissonFavorite) {
