@@ -13,20 +13,13 @@ public class HistoireTP5 {
 		Yakuza yaku = new Yakuza("Yaku Le Noir", 30, "whisky", "Warsong");
 		Ronin roro = new Ronin("Roro", 60, "shochu");
 		
-		marco.direBonjour();
-		roro.direBonjour();
+		
 		marco.faireConnaissanceAvec(roro);
 		roro.faireConnaissanceAvec(marco);
-		marco.direBonjour();
-		yaku.direBonjour();
 		marco.faireConnaissanceAvec(yaku);
 		yaku.faireConnaissanceAvec(marco);
-		marco.direBonjour();
-		chonin.direBonjour();
 		marco.faireConnaissanceAvec(chonin);
 		chonin.faireConnaissanceAvec(marco);
-		marco.direBonjour();
-		kumi.direBonjour();
 		marco.parler(marco.nombreConnaissance + ""); 
 		marco.faireConnaissanceAvec(kumi); 
 		marco.listerConnaissance();
@@ -36,8 +29,6 @@ public class HistoireTP5 {
 		System.out.println("\n");
 		
 		Samurai akimoto = new Samurai("Akimoto", 80, "saké", "Miyamoto"); 
-		akimoto.direBonjour();
-		marco.direBonjour();
 		akimoto.faireConnaissanceAvec(marco);
 		marco.faireConnaissanceAvec(akimoto);
 		akimoto.listerConnaissance();
@@ -51,15 +42,12 @@ public class HistoireTP5 {
 		masako.ranconner(chonin);
 		masako.ranconner(marco);
 		
-		akimoto.direBonjour();
-		masako.direBonjour();
 		akimoto.faireConnaissanceAvec(masako);
 		masako.faireConnaissanceAvec(akimoto);
 		
 		masako.ranconner(kumi);
 		
-		masako.direBonjour();
-		yaku.direBonjour();
+	
 		masako.faireConnaissanceAvec(yaku);
 		yaku.faireConnaissanceAvec(masako);
 		
@@ -68,6 +56,24 @@ public class HistoireTP5 {
 		masako.direBonjour();
 		roro.direBonjour();
 		
+		System.out.println("");
+		
+		Samurai akira = new Traitre("Akira", 50, "whisky", "Miyamoto");
+		Ronin hiro = new Traitre("Hiro", 20,"saké", "Miyamoto");
+		Humain nori = new Traitre("Nori", 20, "whisky", "Miyamoto");
+		
+//		Masako peut utiliser : direbonjour(), ranconner(), faireLeGentil(), ainsi que les methodes de la classe humain"
+//		
+		
+		
+		GrandMere grandMere = new GrandMere("Grand-Mère", 10,"the");
+		grandMere.faireConnaissanceAvec(akimoto);
+		grandMere.faireConnaissanceAvec(yaku);
+		grandMere.faireConnaissanceAvec(masako);
+		grandMere.faireConnaissanceAvec(kumi);
+		grandMere.faireConnaissanceAvec(marco);
+		grandMere.faireConnaissanceAvec(chonin);
+		grandMere.ragoter();
 		
 		
 		

@@ -54,7 +54,7 @@ public class Humain {
 	}
 	
 	public void faireConnaissanceAvec(Humain autreHumain) {
-		
+		direBonjour();
 		if(nombreConnaissance < nombreConnaissanceMax) {
 			connaissance[nombreConnaissance] = autreHumain; 
 			nombreConnaissance = nombreConnaissance + 1;
